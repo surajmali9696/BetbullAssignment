@@ -1,0 +1,6 @@
+framework module Pods_Betbull {
+  umbrella header "Pods-Betbull-umbrella.h"
+
+  export *
+  module * { export * }
+}

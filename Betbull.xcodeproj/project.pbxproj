@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E4FF7EB25126696003D36AD /* WebSocketClient+Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4FF7EA25126696003D36AD /* WebSocketClient+Token.swift */; };
+		2E862E70251204C800C18EDE /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E862E6F251204C800C18EDE /* HTTPRequest.swift */; };
+		2E862E85251216EB00C18EDE /* DateFormatter+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E862E84251216EB00C18EDE /* DateFormatter+Additions.swift */; };
+		2E88CC2E25122F39005D33FE /* WebSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E88CC2D25122F39005D33FE /* WebSocketClient.swift */; };
+		2E88CC3125122F56005D33FE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E88CC3025122F56005D33FE /* HTTPClient.swift */; };
+		2E88CC3B25123AB8005D33FE /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E88CC3725123AB8005D33FE /* Tournament.swift */; };
+		2E88CC3C25123AB8005D33FE /* Outcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E88CC3825123AB8005D33FE /* Outcome.swift */; };
+		2E88CC3D25123AB8005D33FE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E88CC3925123AB8005D33FE /* Event.swift */; };
+		2E88CC3E25123AB8005D33FE /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E88CC3A25123AB8005D33FE /* Market.swift */; };
+		2EA8930B2506A8E80094353A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA8930A2506A8E80094353A /* AppDelegate.swift */; };
+		2EA8930D2506A8E80094353A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA8930C2506A8E80094353A /* SceneDelegate.swift */; };
+		2EA893142506A8E90094353A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA893132506A8E90094353A /* Assets.xcassets */; };
+		2EA893172506A8E90094353A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA893152506A8E90094353A /* LaunchScreen.storyboard */; };
+		2EA893212506ACD40094353A /* URL+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA893202506ACD40094353A /* URL+Additions.swift */; };
+		2EA893382506B9750094353A /* URLRequest+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA893372506B9750094353A /* URLRequest+Additions.swift */; };
+		2EA8933A2506BA880094353A /* DispatchQueue+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA893392506BA880094353A /* DispatchQueue+Additions.swift */; };
+		2EA8933E2506BC100094353A /* Sportsbook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA8933D2506BC100094353A /* Sportsbook.storyboard */; };
+		2EA893402506BC310094353A /* SportsbookHomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA8933F2506BC310094353A /* SportsbookHomeScene.swift */; };
+		2EA893422506BC6D0094353A /* SportsbookHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA893412506BC6D0094353A /* SportsbookHomeCoordinator.swift */; };
+		2EA893442506BCC60094353A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA893432506BCC60094353A /* Coordinator.swift */; };
+		2EA893492506BDEE0094353A /* UIStoryboard+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA893482506BDEE0094353A /* UIStoryboard+Additions.swift */; };
+		2EA8935A2506C02B0094353A /* GetSportsbookRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA893592506C02B0094353A /* GetSportsbookRequest.swift */; };
+		2EA893602506C18B0094353A /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA8935F2506C18B0094353A /* EventDetail.swift */; };
+		2EA893622506C1F30094353A /* GetSportsbookEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA893612506C1F30094353A /* GetSportsbookEventRequest.swift */; };
+		2EA893642506C5380094353A /* SportsbookEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA893632506C5380094353A /* SportsbookEventCoordinator.swift */; };
+		2EA893662506C54A0094353A /* SportsbookEventScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA893652506C54A0094353A /* SportsbookEventScene.swift */; };
+		2EA893682506C6890094353A /* SportsbookHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA893672506C6890094353A /* SportsbookHomeInteractor.swift */; };
+		2EA8936A2506D08D0094353A /* SportsbookEventInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA893692506D08D0094353A /* SportsbookEventInteractor.swift */; };
+		320F33DDBD6B6525F3C5CB5E /* Pods_Betbull.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A880F10AF70AAFBAA4066F1F /* Pods_Betbull.framework */; };
+		455BD4A625C72C0C008EDF3F /* SocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455BD4A525C72C0C008EDF3F /* SocketModel.swift */; };
+		4580200D25C67724008D5171 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580200C25C67724008D5171 /* ServiceAPI.swift */; };
+		45F7194B25C689CD00FC0EDC /* TournamentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F7194A25C689CD00FC0EDC /* TournamentCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E4FF7EA25126696003D36AD /* WebSocketClient+Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WebSocketClient+Token.swift"; sourceTree = "<group>"; };
+		2E862E6F251204C800C18EDE /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		2E862E84251216EB00C18EDE /* DateFormatter+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Additions.swift"; sourceTree = "<group>"; };
+		2E88CC2D25122F39005D33FE /* WebSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketClient.swift; sourceTree = "<group>"; };
+		2E88CC3025122F56005D33FE /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		2E88CC3725123AB8005D33FE /* Tournament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tournament.swift; sourceTree = "<group>"; };
+		2E88CC3825123AB8005D33FE /* Outcome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Outcome.swift; sourceTree = "<group>"; };
+		2E88CC3925123AB8005D33FE /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		2E88CC3A25123AB8005D33FE /* Market.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		2EA893072506A8E80094353A /* Betbull.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Betbull.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA8930A2506A8E80094353A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EA8930C2506A8E80094353A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2EA893132506A8E90094353A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EA893162506A8E90094353A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2EA893182506A8E90094353A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA893202506ACD40094353A /* URL+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Additions.swift"; sourceTree = "<group>"; };
+		2EA893372506B9750094353A /* URLRequest+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Additions.swift"; sourceTree = "<group>"; };
+		2EA893392506BA880094353A /* DispatchQueue+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Additions.swift"; sourceTree = "<group>"; };
+		2EA8933D2506BC100094353A /* Sportsbook.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sportsbook.storyboard; sourceTree = "<group>"; };
+		2EA8933F2506BC310094353A /* SportsbookHomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsbookHomeScene.swift; sourceTree = "<group>"; };
+		2EA893412506BC6D0094353A /* SportsbookHomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsbookHomeCoordinator.swift; sourceTree = "<group>"; };
+		2EA893432506BCC60094353A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2EA893482506BDEE0094353A /* UIStoryboard+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Additions.swift"; sourceTree = "<group>"; };
+		2EA893592506C02B0094353A /* GetSportsbookRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSportsbookRequest.swift; sourceTree = "<group>"; };
+		2EA8935F2506C18B0094353A /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
+		2EA893612506C1F30094353A /* GetSportsbookEventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSportsbookEventRequest.swift; sourceTree = "<group>"; };
+		2EA893632506C5380094353A /* SportsbookEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsbookEventCoordinator.swift; sourceTree = "<group>"; };
+		2EA893652506C54A0094353A /* SportsbookEventScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsbookEventScene.swift; sourceTree = "<group>"; };
+		2EA893672506C6890094353A /* SportsbookHomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsbookHomeInteractor.swift; sourceTree = "<group>"; };
+		2EA893692506D08D0094353A /* SportsbookEventInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsbookEventInteractor.swift; sourceTree = "<group>"; };
+		455BD4A525C72C0C008EDF3F /* SocketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketModel.swift; sourceTree = "<group>"; };
+		4580200C25C67724008D5171 /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
+		45F7194A25C689CD00FC0EDC /* TournamentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentCell.swift; sourceTree = "<group>"; };
+		A880F10AF70AAFBAA4066F1F /* Pods_Betbull.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Betbull.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFDD88CBEF6C8E3D57E3E4B6 /* Pods-Betbull.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Betbull.release.xcconfig"; path = "Target Support Files/Pods-Betbull/Pods-Betbull.release.xcconfig"; sourceTree = "<group>"; };
+		FE4C866C467F84751FD31C8A /* Pods-Betbull.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Betbull.debug.xcconfig"; path = "Target Support Files/Pods-Betbull/Pods-Betbull.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EA893042506A8E80094353A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320F33DDBD6B6525F3C5CB5E /* Pods_Betbull.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03558C02ADD2DE8CA0972BD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE4C866C467F84751FD31C8A /* Pods-Betbull.debug.xcconfig */,
+				DFDD88CBEF6C8E3D57E3E4B6 /* Pods-Betbull.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		29F437BBF380B7067CB20F0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A880F10AF70AAFBAA4066F1F /* Pods_Betbull.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E862E71251204CF00C18EDE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2E88CC2F25122F45005D33FE /* HTTP */,
+				2E88CC3225122F8D005D33FE /* Websocket */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2E862E792512125B00C18EDE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				45F7194A25C689CD00FC0EDC /* TournamentCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2E88CC2F25122F45005D33FE /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				2E88CC3025122F56005D33FE /* HTTPClient.swift */,
+				2E862E6F251204C800C18EDE /* HTTPRequest.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		2E88CC3225122F8D005D33FE /* Websocket */ = {
+			isa = PBXGroup;
+			children = (
+				2E88CC2D25122F39005D33FE /* WebSocketClient.swift */,
+				2E4FF7EA25126696003D36AD /* WebSocketClient+Token.swift */,
+			);
+			path = Websocket;
+			sourceTree = "<group>";
+		};
+		2E88CC3625123AB8005D33FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2E88CC3925123AB8005D33FE /* Event.swift */,
+				2E88CC3A25123AB8005D33FE /* Market.swift */,
+				2E88CC3825123AB8005D33FE /* Outcome.swift */,
+				2E88CC3725123AB8005D33FE /* Tournament.swift */,
+				455BD4A525C72C0C008EDF3F /* SocketModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2EA892FE2506A8E80094353A = {
+			isa = PBXGroup;
+			children = (
+				2EA893092506A8E80094353A /* Betbull */,
+				2EA893082506A8E80094353A /* Products */,
+				03558C02ADD2DE8CA0972BD2 /* Pods */,
+				29F437BBF380B7067CB20F0D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2EA893082506A8E80094353A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EA893072506A8E80094353A /* Betbull.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EA893092506A8E80094353A /* Betbull */ = {
+			isa = PBXGroup;
+			children = (
+				2EA8930A2506A8E80094353A /* AppDelegate.swift */,
+				2EA8930C2506A8E80094353A /* SceneDelegate.swift */,
+				2EA893242506B4770094353A /* Extensions */,
+				2E862E71251204CF00C18EDE /* Common */,
+				2EA893222506B4670094353A /* Scenes */,
+				2EA893152506A8E90094353A /* LaunchScreen.storyboard */,
+				2EA893132506A8E90094353A /* Assets.xcassets */,
+				2EA893182506A8E90094353A /* Info.plist */,
+			);
+			path = Betbull;
+			sourceTree = "<group>";
+		};
+		2EA893222506B4670094353A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2EA893432506BCC60094353A /* Coordinator.swift */,
+				2EA893232506B46C0094353A /* Sportsbook */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2EA893232506B46C0094353A /* Sportsbook */ = {
+			isa = PBXGroup;
+			children = (
+				2EA8935D2506C0D50094353A /* Home */,
+				2EA8934A2506BFD80094353A /* Event */,
+				2EA8933D2506BC100094353A /* Sportsbook.storyboard */,
+			);
+			path = Sportsbook;
+			sourceTree = "<group>";
+		};
+		2EA893242506B4770094353A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2EA893252506B47E0094353A /* Foundation */,
+				2EA893472506BDDE0094353A /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2EA893252506B47E0094353A /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				2EA893392506BA880094353A /* DispatchQueue+Additions.swift */,
+				2EA893202506ACD40094353A /* URL+Additions.swift */,
+				2EA893372506B9750094353A /* URLRequest+Additions.swift */,
+				2E862E84251216EB00C18EDE /* DateFormatter+Additions.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		2EA893472506BDDE0094353A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				2EA893482506BDEE0094353A /* UIStoryboard+Additions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		2EA8934A2506BFD80094353A /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				2EA8934B2506BFE00094353A /* API */,
+				2EA893632506C5380094353A /* SportsbookEventCoordinator.swift */,
+				2EA893692506D08D0094353A /* SportsbookEventInteractor.swift */,
+				2EA893652506C54A0094353A /* SportsbookEventScene.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		2EA8934B2506BFE00094353A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2EA8935E2506C1680094353A /* Models */,
+				2EA8935C2506C0C30094353A /* Requests */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		2EA8934C2506BFE70094353A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2E88CC3625123AB8005D33FE /* Models */,
+				4580200F25C67FB2008D5171 /* ViewModel */,
+				2EA8934E2506BFFD0094353A /* Requests */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		2EA8934E2506BFFD0094353A /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				2EA893592506C02B0094353A /* GetSportsbookRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		2EA8935C2506C0C30094353A /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				2EA893612506C1F30094353A /* GetSportsbookEventRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		2EA8935D2506C0D50094353A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2EA8934C2506BFE70094353A /* API */,
+				2E862E792512125B00C18EDE /* UI */,
+				2EA893412506BC6D0094353A /* SportsbookHomeCoordinator.swift */,
+				2EA893672506C6890094353A /* SportsbookHomeInteractor.swift */,
+				2EA8933F2506BC310094353A /* SportsbookHomeScene.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2EA8935E2506C1680094353A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2EA8935F2506C18B0094353A /* EventDetail.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4580200F25C67FB2008D5171 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4580200C25C67724008D5171 /* ServiceAPI.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EA893062506A8E80094353A /* Betbull */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EA8931B2506A8E90094353A /* Build configuration list for PBXNativeTarget "Betbull" */;
+			buildPhases = (
+				BFD377DC2324397A6D307111 /* [CP] Check Pods Manifest.lock */,
+				2EA893032506A8E80094353A /* Sources */,
+				2EA893042506A8E80094353A /* Frameworks */,
+				2EA893052506A8E80094353A /* Resources */,
+				2D1E6551D8B25C39A4490485 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Betbull;
+			productName = Betbull;
+			productReference = 2EA893072506A8E80094353A /* Betbull.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EA892FF2506A8E80094353A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = Betbull;
+				TargetAttributes = {
+					2EA893062506A8E80094353A = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 2EA893022506A8E80094353A /* Build configuration list for PBXProject "Betbull" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2EA892FE2506A8E80094353A;
+			productRefGroup = 2EA893082506A8E80094353A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EA893062506A8E80094353A /* Betbull */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EA893052506A8E80094353A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA893172506A8E90094353A /* LaunchScreen.storyboard in Resources */,
+				2EA8933E2506BC100094353A /* Sportsbook.storyboard in Resources */,
+				2EA893142506A8E90094353A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D1E6551D8B25C39A4490485 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Betbull/Pods-Betbull-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Betbull/Pods-Betbull-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Betbull/Pods-Betbull-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFD377DC2324397A6D307111 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Betbull-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EA893032506A8E80094353A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E88CC3B25123AB8005D33FE /* Tournament.swift in Sources */,
+				2EA8936A2506D08D0094353A /* SportsbookEventInteractor.swift in Sources */,
+				2E88CC3125122F56005D33FE /* HTTPClient.swift in Sources */,
+				2E88CC2E25122F39005D33FE /* WebSocketClient.swift in Sources */,
+				2E88CC3C25123AB8005D33FE /* Outcome.swift in Sources */,
+				2EA893442506BCC60094353A /* Coordinator.swift in Sources */,
+				455BD4A625C72C0C008EDF3F /* SocketModel.swift in Sources */,
+				2EA893422506BC6D0094353A /* SportsbookHomeCoordinator.swift in Sources */,
+				2EA893662506C54A0094353A /* SportsbookEventScene.swift in Sources */,
+				2E88CC3D25123AB8005D33FE /* Event.swift in Sources */,
+				2EA893622506C1F30094353A /* GetSportsbookEventRequest.swift in Sources */,
+				2EA893642506C5380094353A /* SportsbookEventCoordinator.swift in Sources */,
+				2E88CC3E25123AB8005D33FE /* Market.swift in Sources */,
+				2E4FF7EB25126696003D36AD /* WebSocketClient+Token.swift in Sources */,
+				45F7194B25C689CD00FC0EDC /* TournamentCell.swift in Sources */,
+				2EA8930B2506A8E80094353A /* AppDelegate.swift in Sources */,
+				2EA8935A2506C02B0094353A /* GetSportsbookRequest.swift in Sources */,
+				2EA893212506ACD40094353A /* URL+Additions.swift in Sources */,
+				4580200D25C67724008D5171 /* ServiceAPI.swift in Sources */,
+				2EA8933A2506BA880094353A /* DispatchQueue+Additions.swift in Sources */,
+				2EA893492506BDEE0094353A /* UIStoryboard+Additions.swift in Sources */,
+				2EA8930D2506A8E80094353A /* SceneDelegate.swift in Sources */,
+				2EA893602506C18B0094353A /* EventDetail.swift in Sources */,
+				2EA893682506C6890094353A /* SportsbookHomeInteractor.swift in Sources */,
+				2EA893402506BC310094353A /* SportsbookHomeScene.swift in Sources */,
+				2E862E85251216EB00C18EDE /* DateFormatter+Additions.swift in Sources */,
+				2E862E70251204C800C18EDE /* HTTPRequest.swift in Sources */,
+				2EA893382506B9750094353A /* URLRequest+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2EA893152506A8E90094353A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EA893162506A8E90094353A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EA893192506A8E90094353A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2EA8931A2506A8E90094353A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EA8931C2506A8E90094353A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE4C866C467F84751FD31C8A /* Pods-Betbull.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LHDNA9WW6D;
+				INFOPLIST_FILE = Betbull/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.betbull.Betbull;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		2EA8931D2506A8E90094353A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFDD88CBEF6C8E3D57E3E4B6 /* Pods-Betbull.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LHDNA9WW6D;
+				INFOPLIST_FILE = Betbull/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.betbull.Betbull;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EA893022506A8E80094353A /* Build configuration list for PBXProject "Betbull" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EA893192506A8E90094353A /* Debug */,
+				2EA8931A2506A8E90094353A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EA8931B2506A8E90094353A /* Build configuration list for PBXNativeTarget "Betbull" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EA8931C2506A8E90094353A /* Debug */,
+				2EA8931D2506A8E90094353A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EA892FF2506A8E80094353A /* Project object */;
+}
